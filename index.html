@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internation Tourist Company</title>
+    <link rel="icon" type="image" href="image/logoPic.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome-5.15.3/css/all.css">
@@ -28,7 +29,7 @@
             align-items: center;
         }
         
-        .logoContainer img {
+        .logoContainer .bgImage {
             position: absolute;
             z-index: -1;
             width: 100%;
@@ -36,6 +37,11 @@
             object-fit: cover;
             object-position: 100% 40%;
             opacity: 0.8;
+        }
+        
+        .logoContainer .logoImage {
+            width: 160px;
+            height: 90px;
         }
         
         .logo-text {
@@ -46,7 +52,6 @@
         .logo-text .sec-span {
             font-weight: bolder;
             text-transform: capitalize;
-            font-size: 500%;
         }
         
         .logoContainer .first {
@@ -61,10 +66,16 @@
             text-decoration: none;
             position: absolute;
             right: 30px;
-            bottom: 10%;
             font-size: 30px;
         }
         /* Logo Section End */
+        /* Nav Section */
+        
+        .navbar-brand img {
+            height: 50px;
+            width: 75px;
+        }
+        /* Nav SEction End */
         /* About us Section */
         
         .aboutContainer {
@@ -112,26 +123,28 @@
         @media (min-width:1081px) {
             .logo-text .first-span,
             .logo-text .sec-span {
-                font-size: 100px;
+                font-size: 60px;
             }
             .logo-text p {
-                font-size: 40px;
+                font-size: 35px;
             }
             .signin {
                 font-size: 30px;
+                bottom: 10%;
             }
         }
         
         @media (max-width:1080px) {
             .logo-text .first-span,
             .logo-text .sec-span {
-                font-size: 90px;
+                font-size: 60px;
             }
             .logo-text p {
                 font-size: 35px;
             }
             .signin {
-                font-size: 25px;
+                font-size: 30px;
+                bottom: 10%;
             }
         }
         
@@ -145,6 +158,7 @@
             }
             .signin {
                 font-size: 20px;
+                bottom: 10%;
             }
         }
         
@@ -158,6 +172,7 @@
             }
             .signin {
                 font-size: 17px;
+                bottom: 5%;
             }
         }
     </style>
@@ -168,9 +183,13 @@
     <!-- logo section start-->
     <section class="logo">
         <div class="logoContainer">
-            <img src="image/021.jpg" alt="">
+            <img src="image/021.jpg" alt="" class="bgImage">
             <div class="logo-text">
-                <span class="first-span">the </span><span class="sec-span">grey</span>
+                <img src="image/logoPic.png" class="logoImage" alt="">
+                <div>
+                    <span class="first-span">The </span>
+                    <span class="sec-span"> Grey</span>
+                </div>
                 <p class="text-black first "> Global tour company</p>
                 <p class=" secound text-black ">Make Your New World</p>
             </div>
@@ -184,7 +203,8 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 100%;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <h2>The Grey</h2>
+
+                    <h2><img src="image/logoPic1.png" alt=""> The Grey</h2>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -607,7 +627,7 @@
     <!-- histroist Trip secion end -->
 
     <!-- Comment Section Start-->
-    <section id="comment " class="comment ">
+    <section id="comment" class="comment">
         <div class="commentCointer ">
             <h2 class="text-center ">Any idea of yours are welcome to suggest here.</h2>
             <form action=" " class="container">
@@ -666,6 +686,7 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+
     <div class="container row text-center text-decoration-none" style="color: rgb(28, 24, 255);">
         <p class="col-6 col-sm-6 col-md-3">@ 2024</p>
         <a href="" class="col-6 col-sm-6 col-md-3 text-decoration-none">Terms</a>
